@@ -42,12 +42,27 @@ h1, h2, h3, h4, h5, h6 {
   background-attachment: fixed;
   margin-top: -25px;
   margin-bottom: 20px;
+  display: flex;
+}
+.container-fluid{
+  display: flex;
+  background-color: rgba(0,0,0,0.4);
+  justify-content: center;
 }
 .bgimage h5 {
   color:white;
   text-shadow:2px 2px #333;
 }
-
+.bgimage p{
+ color:white;
+ max-width: 800px;
+}
+.col-lg-12.col-md-12.col-sm-12.col-xs-12{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;   
+}
 .article-title {
   color: #444444;
 }
