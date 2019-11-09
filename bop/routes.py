@@ -1,13 +1,7 @@
-import ConfigParser
-
-from flask import Flask, render_template, flash, redirect, url_for
-from forms import RegistrationForm, LoginForm
-
-app = Flask(__name__)
-
-app.config['SECRET_KEY'] = '\xe3\x03\xc7\xa9\x9a\xd7\xfe\xf7\x12\xe1\xc2##D\xa4R\xcf\x9e\xb3\x96}s\xd8\x99'
-
-app.secret_key = '\xe3\x03\xc7\xa9\x9a\xd7\xfe\xf7\x12\xe1\xc2##D\xa4R\xcf\x9e\xb3\x96}s\xd8\x99'
+from flask import  render_template, flash, redirect, url_for
+from bop import app
+from bop.forms import RegistrationForm, LoginForm
+from bop.models import User, Post
 
 posts = [
     {
@@ -64,33 +58,3 @@ def login():
             flash('Login unsuccessful. Please check your username and password', 'danger')
     return render_template('login.html', title='Login', form=form)
 
-
-@app.route('/config/')
-def config():
-    str = []
-    str.append('Debug:'+app.config['DEBUG'])
-    str.append('port:'+app.config['port'])
-    str.append('url:'+app.config['url'])
-    str.append('ip_address:'+app.config['ip_address'])
-    return '\t'.join(str)
-
-def init(app):
-    config = ConfigParser.ConfigParser()
-    try:
-        config_location = "etc/defaults.cfg"
-        config.read(config_location)
-
-        app.config['DEBUG'] = config.get("config", "debug")
-        app.config['ip_address'] = config.get("config", "ip_address")
-        app.config['port'] = config.get("config", "port")
-        app.config['url'] = config.get("config", "url")
-    except:
-        print "Could not read configs from:, config_location"
-
-        init(app)
-
-if __name__ == '__main__':
-    init(app)
-    app.run(
-            host=app.config['ip_address'],
-            port=int(app.config['port']))
