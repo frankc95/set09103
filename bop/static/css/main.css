@@ -30,6 +30,8 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #dddddd;
   border-radius: 3px;
   margin-bottom: 20px;
+  max-width: 800px;
+  width: 100%;
 }
 
 .bgimage {
@@ -63,6 +65,21 @@ h1, h2, h3, h4, h5, h6 {
    align-items: center;
    justify-content: center;   
 }
+.col-md-12 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.col-md-12 h1{
+   align-self: flex-start;
+}
+
+
+a.nav-item.nav-link {
+   align-self: flex-start;
+}
+
 .article-title {
   color: #444444;
 }
