@@ -1,5 +1,85 @@
 {% extends "layout.html" %}
 {% block content %}
-                <h1>Resources Page</h1>
+		<div class="resources-wrapper">   
+        		<div class="collapse-wrapper">
+            			<h2>Body Suspension</h2>
+            			<br/>
+            			<details>
+                			<summary>After Care</summary>
+                			<p>Unless your bandages are soaked with blood, we recommend that you keep them on when you go to bed and remove them the next day when you take a shower. Wash your suspension wounds gently with mild antiseptic soap or just mild, non-perfumed regular soap, and pat them gently dry with a clean towel. If the wounds are still open, put clean bandages on. If they are already closing then just put clean clothes on.</p>
+                			<p>During a suspension, it is common for some air to enter under the skin through the entry  and exit wounds of the hooks, especially if you hang for a long time and/or swing around a lot. This is not dangerous and nothing to be alarmed about. We massage most of the air out during aftercare, and the rest gets reabsorbed by the body in the course of a few days. In the meantime, the skin and joints around where you had the hooks may feel a bit puffy, tender and “crackly” (often referred to as “Rice Crispies”, because of the “crackle and pop” sounds the tiny air bubbles can make).</p>
+                			<p>More rarely, some blood may congeal under the skin between the entry and exit wounds of a hook and cause swelling and tenderness just in that area – this will also be gradually cleaned up and healed by the body.</p>
+                			<p>Please do not touch, scratch or pick at your wounds while they are healing. Let the scabs develop and fall of by themselves, otherwise you may end up with a lot of scar tissue that will make your skin harder and harder to pierce, and weaker and more prone to tearing during your next suspension. Picking at your wounds can also lead to infections.</p>
+                			<p>A suspension can be an intense experience on many different levels and affects different people in different ways. If you have any concerns or questions about aftercare in the days following your suspension, or you feel the need to talk to someone non-judgmental and experienced with suspension about your feelings, thoughts and reactions, joyful or sad, please do not hesitate to contact us. We will do our best to answer your questions, share potentially useful perspectives, and point you at other forums in which you can discuss, explore and process your experience. </p>
+                			<!--<a href="javascript:window.print()"><i class="fas fa-printr"></i></a>-->
+            			</details>
+            			<details>
+                			<summary>Suspension Positions</summary>
+                			<div class="gallery-loading"><img src="img/loading1.svg"></div>
+                			<div class="gallery-image-wrapper">
+                    				<img src="img/suspension-positions.jpg" alt="image">
+                			</div>
+            			</details>
+        		</div>    
+        		<div class="collapse-wrapper">
+            			<h2>Frequently Asked Questions</h2>
+            			<br/>
+            			<details>
+                			<summary>What is Body Suspenion</summary>
+                			<p>Suspension means the act of rigging a human body to hang from implements that have been placed through temporary perforations in the skin.</p>
+            			</details>
+            			<details>
+                			<summary>Does it hurt</summary>
+                			<p>Obviously.</p>
+            			</details>
+            			<details>
+                			<summary>How long does the suspension last for?</summary>
+                			<p>You decide.</p>
+            			</details>
+            			<details>
+                			<summary>How should I prepare myself?</summary>
+                			<p>Make sure you have decent breakfast, you are not drunk or under other influences.</p>
+            			</details>
+            			<details>
+                			<summary>Will my skin tear?</summary>
+                			<p>It really depends on the position of suspension, but yes, the skin could tear. Don't worry, are prepared for this ocasion.</p>
+            			</details>
+            			<details>
+                			<summary>Age restriction</summary>
+                			<p>Strictly 18+, no exceptions.</p>
+            			</details>
+            			<details>
+                			<summary>Is it safe?</summary>
+                			<p>We take professionalism and high standards very seriously. Suspension enviroment is always clean and the equipment is always sterilized.</p>
+            			</details>
+            			<details>
+                			<summary>What is the cost of suspesnion</summary>
+                			<p>We have a set fee of £100 per suspendee.</p>
+            			</details>
+            			<details>
+                			<summary>Can I bring a friend along?</summary>
+                			<p>We are always happy for suspendees to bring one companion with them.</p>
+            			</details>
+			</div>   
+    		</div>
+<script>
+
+    // Fetch all details element
+    const details = Array.from(document.querySelectorAll("details"));
+
+        // Add onclick listeners
+        details.forEach(targetDetail => {
+            targetDetail.addEventListener("click", () => {
+                // Close all details that are not targetDetail
+                details.forEach(detail => {
+                if (detail !== targetDetail) {
+                    detail.removeAttribute("open");
+                }
+            });
+        });
+    });
+
+
+</script>		
 {% endblock content %}
 

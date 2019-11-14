@@ -1,0 +1,98 @@
+.resources-wrapper{
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  max-width: 800px;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.fas fa-print{
+  padding-top: 20px;
+  color: #0000004d;
+  font-size: 25px;
+}
+
+.collapse-wrapper{
+  padding: 50px 20px 0px 20px;
+  cursor: pointer;
+}
+
+.collapse-wrapper:last-child{
+  padding: 50px 20px 50px 20px;
+}
+
+.collapse-wrapper h2{
+  text-align: center;
+}
+
+.collapse-wrapper details {
+  position: relative;
+}
+
+.collapse-wrapper details summary::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: url("../img/arrow.svg")
+    no-repeat 50% 50% / 12px 12px;
+  width: 24px;
+  height: 20px;
+  transition: transform 0.2s linear;
+}
+
+.collapse-wrapper summary {
+  width: 100%;
+  padding: 20px;
+  padding-left: 25px;
+  border-bottom: 2px solid rgba(125, 125, 125, 0.4);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.collapse-wrapper details img{
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.collapse-wrapper summary:hover {
+  color: #007bff;
+}
+
+.collapse-wrapper summary:focus {
+  outline: none;
+}
+
+.collapse-wrapper details[open] summary:before {
+  transform: rotate(90deg);
+}
+
+.collapse-wrapper details[open] > summary {
+  color: #007bff;
+}
+
+.collapse-wrapper details[open] > summary ~ * {
+  animation: open 1s ease;
+  margin-top: 10px;
+  width: 100%;
+  padding: 0px 40px;
+}
+
+.collapse-wrapper p.source {
+  padding-top: 50px;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
