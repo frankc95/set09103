@@ -1,14 +1,12 @@
 {% extends "layout.html" %}
 {% block content %}
-{% if current_user.is_authenticated %}
-	<a class="nav-item nav-link" href="{{ url_for('new_post') }}">WRITE A REVIEW</a>
-{% endif %}
+	<h3 class="mb-3">{{ user.username }} has {{ posts.total }} reviews in total</h3> 	
     {% for post in posts.items %}
         <article class="media content-section">
           <img class="rounded-circle article-img" src="{{ url_for('static', filename='img/profile_pic/' + post.author.image_file) }}">
           <div class="media-body">
             <div class="article-metadata">
-            	<a class="mr-2" href="{{ url_for('user_review', username=post.author.username) }}">{{ post.author.username }}</a>
+		    <a class="mr-2" href="{{ url_for('user_review', username=post.author.username) }}"">{{ post.author.username }}</a>
               <small class="text-muted">{{ post.date_posted.strftime('%d-%m-%Y') }}</small>
             </div>
             <h2><a class="article-title" href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></h2>
@@ -18,15 +16,16 @@
     {% endfor %}
     <div class="list">
     {% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
-    	{% if page_num %}
-		{% if posts.page == page_num %}
-			<a class="btn btn-dark mb-4" href="{{ url_for('review', page=page_num) }}">{{ page_num }}</a>
-			{% else %}
-			<a class="btn btn-outline-dark mb-4" href="{{ url_for('review', page=page_num) }}">{{ page_num }}</a>
-			{% endif %}
-	{% else%}
-		...
-	{% endif %}
+        {% if page_num %}
+                {% if posts.page == page_num %}
+                        <a class="btn btn-dark mb-4" href="{{ url_for('user_review', username=user.username, page=page_num) }}">{{ page_num }}</a>
+                        {% else %}
+                        <a class="btn btn-outline-dark mb-4" href="{{ url_for('user_review', username=user.username, page=page_num) }}">{{ page_num }}</a>
+                        {% endif %}
+        {% else%}
+                ...
+        {% endif %}
     {% endfor %}
     </div>
 {% endblock content %}
+
