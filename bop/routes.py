@@ -39,6 +39,11 @@ def contact():
 def gallery():
     return render_template('gallery.html', title='Gallery')
 
+@app.route("/gallery/<int:post_id>")
+def gallery(gallery_id):
+    post = Post.query.get_or_404(post_id)
+    return render_template('post.html', title=post.title, post=post)
+
 @app.route("/resources")
 def resources():
     return render_template('resources.html', title='Resources')
