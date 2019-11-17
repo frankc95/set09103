@@ -15,9 +15,8 @@
             			</details>
             			<details>
                 			<summary>Suspension Positions</summary>
-                			<div class="gallery-loading"><img src="img/loading1.svg"></div>
                 			<div class="gallery-image-wrapper">
-                    				<img src="img/suspension-positions.jpg" alt="image">
+                    				<img src="{{url_for('static', filename='img/suspension-positions.jpg')}}" alt="image">
                 			</div>
             			</details>
         		</div>    
@@ -62,6 +61,17 @@
             			</details>
 			</div>   
     		</div>
+
+<div class="gallery-overlay">
+    <button aria-label="Close" class="gallery-overlay-nav gallery-overlay-nav-close" type="button"><i class="fas fa-times"></i></button>
+    <button aria-label="prev" class="gallery-overlay-nav gallery-overlay-nav-prev" type="button"><i class="fas fa-chevron-left"></i></button>
+    <button aria-label="next" class="gallery-overlay-nav gallery-overlay-nav-next" type="button"><i class="fas fa-chevron-right"></i></button>
+    <div class="gallery-overlay-image">
+        <img src="" alt="image">
+    </div>
+</div>
+		
+		
 <script>
 
     // Fetch all details element
