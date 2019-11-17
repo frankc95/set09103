@@ -1,7 +1,7 @@
 import os
 import secrets
 from PIL import Image
-from flask import render_template, flash, redirect, url_for, request, abort
+from flask import render_template, flash, redirect, url_for, request, abort, send_from_directory
 from bop import app, db, bcrypt, mail
 from bop.forms import RegistrationForm, LoginForm, UpdateAccountForm, PostForm, RequestResetForm, ResetPasswordForm, ContactForm
 from bop.models import User, Post
@@ -35,14 +35,15 @@ def contact():
     elif request.method == 'GET':
         return render_template('contact.html', title='Contact', form=form)
 
+
 @app.route("/gallery")
 def gallery():
-    return render_template('gallery.html', title='Gallery')
+    image_names = os.listdir('./bop/static/img/gallery')
+    return render_template('gallery.html', title='Gallery', image_names=image_names)
 
-@app.route("/gallery/<int:post_id>")
-def gallery(gallery_id):
-    post = Post.query.get_or_404(post_id)
-    return render_template('post.html', title=post.title, post=post)
+@app.route("/gallery/<filename>")
+def send_image(filename):
+    return send_from_directory("gallery", filename)
 
 @app.route("/resources")
 def resources():
