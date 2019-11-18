@@ -41,10 +41,6 @@ def gallery():
     image_names = os.listdir('./bop/static/img/gallery')
     return render_template('gallery.html', title='Gallery', image_names=image_names)
 
-@app.route("/gallery/<filename>")
-def send_image(filename):
-    return send_from_directory("gallery", filename)
-
 @app.route("/resources")
 def resources():
     return render_template('resources.html', title='Resources')

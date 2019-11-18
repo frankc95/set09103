@@ -1,0 +1,15 @@
+@media (max-width: 1360px) { 
+    .gallery-image-wrapper {
+        column-count: 3;
+    }
+}
+@media screen and (max-width: 950px) {
+    .gallery-image-wrapper {
+        column-count: 2;
+    }
+}
+@media screen and (max-width: 650px) { 
+    .gallery-image-wrapper {
+        column-count: 1;
+    }
+}

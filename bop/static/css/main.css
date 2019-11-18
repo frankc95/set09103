@@ -1,7 +1,7 @@
 body {
   background: #fafafa;
   color: #333333;
-  margin-top: 5rem;
+  margin-top: 6.3rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9,19 +9,56 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-steel {
-  background-color: #1d2124;
+  background-color: #1d2124; 
+}
+.mr-auto, .mx-auto {
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+img.navbar-brand.mr-4 {
+    width: 90px;
 }
 
 .site-header .navbar-nav .nav-link {
-  color: #cbd5db;
+ color: rgba(255, 255, 255, 0.4);
+ transition: all .1s ease;
 }
 
 .site-header .navbar-nav .nav-link:hover {
-  color: #ffffff;
+ color: rgba(255, 255, 255, 1); 
 }
 
 .site-header .navbar-nav .nav-link.active {
-  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+}
+                                  /* NAV ANIMATION */
+
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+display: inline-block;
+opacity: 0;
+transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+margin-right: 5px;
+content: '[';
+transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+margin-left: 5px;
+content: ']';
+transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+opacity: 1;
+transform: translateX(0px);
 }
 
 .content-section {
@@ -70,6 +107,7 @@ h1, h2, h3, h4, h5, h6 {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   padding-top: 50px;
 }
 .col-md-12 h1{
    align-self: flex-start;
