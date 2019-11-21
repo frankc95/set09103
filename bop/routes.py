@@ -12,7 +12,7 @@ from flask_mail import Message, Mail
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template('home.html')
+    return render_template('home.html', active='home')
 
 @app.route("/contact", methods=['GET', 'POST'])
 def contact():
@@ -33,23 +33,28 @@ def contact():
             flash('Your message has been sent. We will reply to you shortly', 'success')
             return render_template('contact.html', form=form)
     elif request.method == 'GET':
-        return render_template('contact.html', title='Contact', form=form)
+        return render_template('contact.html', title='Contact', form=form, active='contact')
 
 
 @app.route("/gallery")
 def gallery():
     image_names = os.listdir('./bop/static/img/gallery')
-    return render_template('gallery.html', title='Gallery', image_names=image_names)
+    return render_template('gallery.html', title='Gallery', image_names=image_names, active='gallery')
+
+@app.route("/test")
+def test():
+    image_names = os.listdir('./bop/static/img/gallery')
+    return render_template('test.html', title='test', image_names=image_names, active='test')
 
 @app.route("/resources")
 def resources():
-    return render_template('resources.html', title='Resources')
+    return render_template('resources.html', title='Resources', active='resources')
 
 @app.route("/review")
 def review():
     page = request.args.get('page', 1, type=int)
     posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
-    return render_template('review.html', title='Reviews', posts=posts)
+    return render_template('review.html', title='Reviews', posts=posts, active='review')
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
@@ -63,7 +68,7 @@ def register():
         db.session.commit()
         flash('Your account has been created! You are now able to log in', 'success')
         return redirect(url_for('login'))
-    return render_template('register.html', title='Register', form=form)
+    return render_template('register.html', title='Register', form=form, active='register')
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
@@ -78,7 +83,7 @@ def login():
             return redirect(next_page) if next_page else redirect(url_for('home'))
         else:
             flash('Login unsuccessful. Please check your email and password', 'danger')
-    return render_template('login.html', title='Login', form=form)
+    return render_template('login.html', title='Login', form=form, active='login')
 
 @app.route("/logout")
 def logout():
@@ -115,7 +120,7 @@ def account():
         form.username.data = current_user.username
         form.email.data = current_user.email
     image_file = url_for('static', filename='img/profile_pic/' + current_user.image_file)
-    return render_template('account.html', title='account', image_file=image_file, form=form)
+    return render_template('account.html', title='account', image_file=image_file, form=form, active='account')
 
 
 @app.route("/post/new", methods=['GET', 'POST'])
@@ -175,44 +180,3 @@ def user_review(username):
     posts = Post.query.filter_by(author=user).order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
     return render_template('user_reviews.html', posts=posts, user=user)
 
-def send_reset_email(user):
-    token = user.get_reset_token()
-    msg = Message('Password Reset Request', sender='blazewicz.j@gmail.com', recipients=[user.email])
-    msg.body = '''To reset your password, visit the following link:
-    %s%s %s=%s
-
-
-    If you did not make this request then simply ignore this email and no changes will be made.
-    ''' % ({url_for,('reset_token', token, token)})
-    mail.send(msg)
-
-
-@app.route("/reset_password", methods=['GET', 'POST'])
-def reset_request():
-    if current_user.is_authenticated:
-        return redirect(url_for('home'))
-    form = RequestResetForm()
-    if form.validate_on_submit():
-        user = User.query.filter_by(email=form.email.data).first()
-        send_reset_email(user)
-        flash('An email has been sent with instructions to reset your password', 'info')
-        return redirect(url_for('login'))
-    return render_template('reset_request.html', title='Reset Password', form=form)
-
-
-@app.route("/reset_password/<token>", methods=['GET', 'POST'])
-def reset_token(token):
-    if current_user.is_authenticated:
-        return redirect(url_for('home'))
-    user = User.verify_reset_token(token)
-    if user is None:
-        flash('That is an invalid or expired token', 'warning')
-        return redirect(url_for('reset_request'))
-    form = ResetPasswordForm()
-    if form.validate_on_submit():
-        hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-        user.password = hashed_password
-        db.session.commit()
-        flash('Your password has been updated! You are now able to log in', 'success')
-        return redirect(url_for('login'))
-    return render_template('reset_token.html', title='Reset Password', form=form)

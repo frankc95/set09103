@@ -32,11 +32,13 @@
 				<div class="collapse navbar-collapse" id="navbarToggle">
 					<div class="navbar-nav mr-auto">	
 
-						<div class="cl-effect-1"><a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a></div>
-						<div class="cl-effect-1"><a class="nav-item nav-link" href="{{ url_for('contact') }}">Contact</a></div>
-						<div class="cl-effect-1"><a class="nav-item nav-link" href="{{ url_for('gallery') }}">Gallery</a></div>
-						<div class="cl-effect-1"><a class="nav-item nav-link" href="{{ url_for('resources') }}">Resources</a></div>
-						<div class="cl-effect-1"><a class="nav-item nav-link" href="{{ url_for('review') }}">Reviews</a></div>
+						<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='home' %} active{%endif %}" href="{{ url_for('home') }}">Home</a></div>
+						<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='contact' %} active{%endif %}" href="{{ url_for('contact') }}">Contact</a></div>
+						<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='gallery' %} active{%endif %}" href="{{ url_for('gallery') }}">Gallery</a></div>
+						<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='resources' %} active{%endif %}" href="{{ url_for('resources') }}">Resources</a></div>
+						<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='review' %} active{%endif %}" href="{{ url_for('review') }}">Reviews</a></div>
+						<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='test' %} active{%endif %}" href="{{ url_for('test') }}">Test</a></div>
+
 
 
 					</div>
@@ -44,11 +46,11 @@
 					<div class="navbar-nav">
 						{% if current_user.is_authenticated %}
 
-							<div class="cl-effect-1"><a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a></div>
-							<div class="cl-effect-1"><a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a></div>
+							<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='account' %} active{%endif %}" href="{{ url_for('account') }}">Account</a></div>
+							<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='logout' %} active{%endif %}" href="{{ url_for('logout') }}">Logout</a></div>
 						{% else %}
-							<div class="cl-effect-1"><a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a></div>
-							<div class="cl-effect-1"><a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a></div>
+							<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='login' %} active{%endif %}" href="{{ url_for('login') }}">Login</a></div>
+							<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='register' %} active{%endif %}" href="{{ url_for('register') }}">Register</a></div>
 						{% endif %}		
 
 
