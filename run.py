@@ -1,6 +1,9 @@
+#run.py is only used to run the application
 import ConfigParser
 from bop import app
 
+
+#config can be used to store whichever configuration values. In this case, it stores DEBUG flag, IP, URL and port number settings
 @app.route('/config/')
 def config():
     str = []

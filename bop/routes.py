@@ -9,8 +9,10 @@ from flask_login import login_user, current_user, logout_user, login_required
 from flask_mail import Message, Mail
 
 
+#@app.route is a decorator that handles backend and allows to write a function that returns information that will be showned on the website with this specific route
 @app.route("/")
 @app.route("/home")
+#def is a function name
 def home():
     return render_template('home.html', active='home')
 
@@ -38,13 +40,35 @@ def contact():
 
 @app.route("/gallery")
 def gallery():
-    image_names = os.listdir('./bop/static/img/gallery')
-    return render_template('gallery.html', title='Gallery', image_names=image_names, active='gallery')
+    #creates space for an arrey
+    albums = []
+    album_paths = []
+    #foreach subdir in dir 'galleries'
+    for root in os.walk('./bop/static/img/galleries/'):
+        #list all subdirs and files
+        albums.append(root)
+    #foreach index in legth albums    
+    for index in range(len(albums)):
+        #list all and split into individual paths and show last path '[-1]'
+        album_paths.append(albums[index][0].split('/')[-1])
+        
+    
+    return render_template('gallery.html', title='gallery', active='gallery', albums=album_paths)
 
-@app.route("/test")
-def test():
-    image_names = os.listdir('./bop/static/img/gallery')
-    return render_template('test.html', title='test', image_names=image_names, active='test')
+@app.route("/album/")
+@app.route("/album/<album_path>")
+def album(album_path):
+    #if empty
+    if album_path == False:
+        #redirect to gallery
+        return redirect(url_for('gallery'))
+    #otherwise
+    else:
+        #loop through dir and specific subdir
+        image_names = os.listdir('./bop/static/img/galleries/' + album_path)
+        #open album.html and display content of specific subdir
+        return render_template('album.html', title='albums', active='gallery', image_names=image_names)
+
 
 @app.route("/resources")
 def resources():
@@ -61,12 +85,15 @@ def register():
     if current_user.is_authenticated:
         return redirect(url_for('home'))
     form = RegistrationForm()
+    #if form validated on submit
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
         user = User(username=form.username.data, email=form.email.data, password=hashed_password)
         db.session.add(user)
         db.session.commit()
+        #flash message in flask is an easy way to display one time allert
         flash('Your account has been created! You are now able to log in', 'success')
+        #return redirect takes user to login after registration if form validates properly
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form, active='register')
 

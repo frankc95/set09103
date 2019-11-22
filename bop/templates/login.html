@@ -7,6 +7,7 @@
                 <legend class="border-bottom mb-4">Log In</legend>
                 <div class="form-group">
                     {{ form.email.label(class="form-control-label") }}
+		    <!--Conditional to print out the errors-->
                     {% if form.email.errors %}
                         {{ form.email(class="form-control form-control-lg is-invalid") }}
                         <div class="invalid-feedback">
@@ -20,7 +21,8 @@
                 </div>
                 <div class="form-group">
                     {{ form.password.label(class="form-control-label") }}
-                    {% if form.password.errors %}
+                    <!--Conditional to print out the errors-->
+		    {% if form.password.errors %}
                         {{ form.password(class="form-control form-control-lg is-invalid") }}
                         <div class="invalid-feedback">
                             {% for error in form.password.errors %}
@@ -31,7 +33,9 @@
                         {{ form.password(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
+		<!--Bootstrap class with check box-->
                 <div class="form-check">
+			<!--remember user-->
                     {{ form.remember(class="form-check-input") }}
                     {{ form.remember.label(class="form-check-label") }}
                 </div>

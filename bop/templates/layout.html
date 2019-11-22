@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/media_query.css') }}">
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+	<!--if exists, set title of each page. if not, set default 'Bliss of Pain'--->
         {% if title %}
                 <title>Bliss of Pain - {{ title }}</title>
         {% else %}
@@ -25,7 +25,7 @@
 	<header class="site-header">
 		<nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
 			<div class="container">
-				<img class="navbar-brand mr-4" src="{{url_for('static', filename='img/profile_pic/BoPwN.png')}}">
+				<a href="{{ url_for('home') }}"><img class="navbar-brand mr-4" src="{{url_for('static', filename='img/profile_pic/BoPwN.png')}}"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -36,18 +36,18 @@
 						<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='contact' %} active{%endif %}" href="{{ url_for('contact') }}">Contact</a></div>
 						<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='gallery' %} active{%endif %}" href="{{ url_for('gallery') }}">Gallery</a></div>
 						<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='resources' %} active{%endif %}" href="{{ url_for('resources') }}">Resources</a></div>
-						<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='review' %} active{%endif %}" href="{{ url_for('review') }}">Reviews</a></div>
-						<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='test' %} active{%endif %}" href="{{ url_for('test') }}">Test</a></div>
-
-
+						<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='review' %} active{%endif %}" href="{{ url_for('review') }}">Reviews</a></div>	
 
 					</div>
 					<!-- Navbar Right Side -->
 					<div class="navbar-nav">
+						<!--Jinja2 conditional that checks if user is logged in or not
+						If is logged in then show account and logout function-->
 						{% if current_user.is_authenticated %}
 
 							<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='account' %} active{%endif %}" href="{{ url_for('account') }}">Account</a></div>
 							<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='logout' %} active{%endif %}" href="{{ url_for('logout') }}">Logout</a></div>
+							<!--If not, show register and login func-->
 						{% else %}
 							<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='login' %} active{%endif %}" href="{{ url_for('login') }}">Login</a></div>
 							<div class="cl-effect-1"><a class="nav-item nav-link{% if active=='register' %} active{%endif %}" href="{{ url_for('register') }}">Register</a></div>
@@ -62,6 +62,7 @@
 	<main role="main" class="container">
  		<div class="row">
 			<div class="col-md-12">
+				<!-- to display any of flash messages on each page that includes layout.html-->
 				{% with messages = get_flashed_messages(with_categories=true) %}
 					{% if messages %}
 						{% for category, message in messages%}

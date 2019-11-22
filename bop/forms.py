@@ -6,6 +6,7 @@ from wtforms import StringField, PasswordField, SubmitField, BooleanField, TextA
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 from bop.models import User
 
+#create class, specify the fields and its validators
 class RegistrationForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired(), Length(min=2, max=20)])
     email = StringField('Email', validators=[DataRequired(), Email()])
@@ -13,16 +14,23 @@ class RegistrationForm(FlaskForm):
     confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
     submit = SubmitField('Sign Up')
     
+    #custom validation with self and username as a argument
     def validate_username(self, username):
+        #query wheter username being submited to the form is already in database
         user = User.query.filter_by(username=username.data).first()
+        #if user exists
         if user:
+            #throw error validation message
             raise ValidationError('That username is taken. please choose a different one')
 
 
-
+    #custom validation with self and username as a argument
     def validate_email(self, email):
+        #query wheter email being submited to the form is already in database
         user = User.query.filter_by(email=email.data).first()
+        #if user with that email exists
         if user:
+            #throw error validation message
             raise ValidationError('That email is taken. Please choose a different one')
                                                         
 class LoginForm(FlaskForm):                             
@@ -31,7 +39,6 @@ class LoginForm(FlaskForm):
     remember = BooleanField('Remember Me')              
     submit = SubmitField('Login')
 
-
 class UpdateAccountForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired(), Length(min=2, max=20)])
     email = StringField('Email', validators=[DataRequired(), Email()])
@@ -39,7 +46,9 @@ class UpdateAccountForm(FlaskForm):
     submit = SubmitField('Update')
 
     def validate_username(self, username):
+        #if username isn't equal to current username
         if username.data != current_user.username:
+            #then run these validation checks
             user = User.query.filter_by(username=username.data).first()
             if user:
                 raise ValidationError('That username is taken. please choose a different one')
@@ -47,7 +56,9 @@ class UpdateAccountForm(FlaskForm):
 
 
     def validate_email(self, email):
+        #if email isn't equal to current email
         if email.data != current_user.email:
+            #then run these validation checks
             user = User.query.filter_by(email=email.data).first()
             if user:
                 raise ValidationError('That email is taken. Please choose a different one')

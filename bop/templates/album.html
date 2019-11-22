@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+                <div class="gallery-loading"><img src="{{url_for('static', filename='img/loading1.svg')}}"></div>
+                <div class="gallery-image-wrapper">
+                        {% for image_names in image_names %}
+                                <img class="img-responsive" src=" {{url_for('static', filename='img/galleries/Gallery1/' + image_names)}}">
+                        {% endfor %}
+
+
+                </div>
+
+<div class="gallery-overlay">
+    <button aria-label="Close" class="gallery-overlay-nav gallery-overlay-nav-close" type="button"><i class="fas fa-times"></i></button>
+    <button aria-label="prev" class="gallery-overlay-nav gallery-overlay-nav-prev" type="button"><i class="fas fa-chevron-left"></i></button>
+    <button aria-label="next" class="gallery-overlay-nav gallery-overlay-nav-next" type="button"><i class="fas fa-chevron-right"></i></button>
+    <div class="gallery-overlay-image">
+        <img src="" alt="image">
+    </div>
+</div>
+
+
+{% endblock content %}
+
