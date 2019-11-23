@@ -52,7 +52,7 @@ def gallery():
     for index in range(len(albums)):
         #list all and split into individual paths and show last path '[-1]'
         album_paths.append(albums[index][0].split('/')[-1])
-    album_image.append(albums[1][2][1])
+        album_image.append(albums[1][2][1])
     
     print album_image[0] 
     
