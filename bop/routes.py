@@ -51,7 +51,7 @@ def gallery():
     #foreach index in legth albums    
     for index in range(len(albums)):
         #list all and split into individual paths and show last path '[-1]'
-        album_paths.append(albums[index][0].split('/')[-1])
+        album_paths.append(albums[index][0].split('/')[-1])   
         album_image.append(albums[1][2][1])
     
     print album_image[0] 
@@ -70,6 +70,7 @@ def album(album_path):
         #loop through dir and specific subdir
         image_names = os.listdir('./bop/static/img/galleries/' + album_path)
         #open album.html and display content of specific subdir
+        
         return render_template('album.html', title='Albums', active='gallery', image_names=image_names, album_path=album_path)
 
 

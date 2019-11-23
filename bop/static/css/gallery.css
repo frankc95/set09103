@@ -1,3 +1,74 @@
+#albums{
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 100%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;  
+}
+
+.album-wrapper{
+  transform: translate(0px, 8px);
+  height: 300px;
+  min-width: 350px;
+  /* min-height: 250px; */
+  flex: 1;
+  background-color: grey;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  margin: 2px;
+  align-items: flex-end;
+  cursor: pointer;
+  opacity: .9;
+  transition: all .4s ease;
+}
+
+.album-photo{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.album-photo img{
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50%;
+  position: absolute;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.album-title{
+  position: absolute;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  transition: all .6s ease;
+  bottom: -70px;
+}
+
+.album-wrapper:hover .album-title{
+  padding: 90px 20px;
+}
+
+.album-wrapper:hover{
+  opacity: 1;
+}
+
+.go-back{
+  align-self: flex-start;
+  padding: 20px 0px;
+}
+
+.go-back a{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
 .gallery-loading{
   display: flex;
   height: 75vh;
