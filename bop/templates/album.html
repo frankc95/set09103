@@ -3,7 +3,7 @@
                 <div class="gallery-loading"><img src="{{url_for('static', filename='img/loading1.svg')}}"></div>
                 <div class="gallery-image-wrapper">
                         {% for image_names in image_names %}
-                                <img class="img-responsive" src=" {{url_for('static', filename='img/galleries/Gallery1/' + image_names)}}">
+                                <img class="img-responsive" src=" {{url_for('static', filename='img/galleries/' + album_path + '/' + image_names)}}">
                         {% endfor %}
 
 

@@ -24,7 +24,7 @@ def contact():
             flash('All fields are required.', 'denger')
             return render_template('contact.html', form=form)
         else:
-            msg = Message(form.subject.data, sender=form.email.data, recipients=['blazewicz.j@gmail.com'])
+            msg = Message(form.subject.data, sender=form.email.data, recipients=['blazewicz.napier@gmail.com'])
             msg.body = '''
             From: %s
             At: %s
@@ -43,6 +43,7 @@ def gallery():
     #creates space for an arrey
     albums = []
     album_paths = []
+    album_image = []
     #foreach subdir in dir 'galleries'
     for root in os.walk('./bop/static/img/galleries/'):
         #list all subdirs and files
@@ -51,9 +52,11 @@ def gallery():
     for index in range(len(albums)):
         #list all and split into individual paths and show last path '[-1]'
         album_paths.append(albums[index][0].split('/')[-1])
-        
+    album_image.append(albums[1][2][1])
     
-    return render_template('gallery.html', title='gallery', active='gallery', albums=album_paths)
+    print album_image[0] 
+    
+    return render_template('gallery.html', title='Gallery', active='gallery', albums=album_paths, album_image=album_image, album_paths=album_paths)
 
 @app.route("/album/")
 @app.route("/album/<album_path>")
@@ -67,7 +70,7 @@ def album(album_path):
         #loop through dir and specific subdir
         image_names = os.listdir('./bop/static/img/galleries/' + album_path)
         #open album.html and display content of specific subdir
-        return render_template('album.html', title='albums', active='gallery', image_names=image_names)
+        return render_template('album.html', title='Albums', active='gallery', image_names=image_names, album_path=album_path)
 
 
 @app.route("/resources")
