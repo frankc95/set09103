@@ -125,9 +125,9 @@
   z-index: 998;
 }
 
-.gallery-overlay-image img{
-  max-width: 80vh;
-  max-height: 90vh;
+.gallery-overlay-image img {
+    max-width: 85vw;
+    height: auto;
 }
 
 .gallery-overlay-nav{

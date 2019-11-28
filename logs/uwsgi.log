@@ -1,0 +1,2309 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 13:28:22 2019] ***
+compiled with version: 7.4.0 on 07 November 2019 11:47:29
+os: Linux-4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+nodename: webtech-07
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /home/40440936/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/40440936/set09103/
+your processes number limit is 3604
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34987 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Oct  7 2019, 17:39:04)  [GCC 7.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x561cc0a7dea0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 656136 bytes (640 KB) for 8 cores
+*** Operational MODE: preforking ***
+added /home/40440936/set09103/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/40440936/set09103/run.py", line 3, in <module>
+    from bop import app
+  File "/home/40440936/set09103/bop/__init__.py", line 3, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ImportError: No module named flask_sqlalchemy
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23321)
+spawned uWSGI worker 1 (pid: 23326, cores: 1)
+spawned uWSGI worker 2 (pid: 23327, cores: 1)
+spawned uWSGI worker 3 (pid: 23328, cores: 1)
+spawned uWSGI worker 4 (pid: 23329, cores: 1)
+spawned uWSGI worker 5 (pid: 23330, cores: 1)
+spawned uWSGI worker 6 (pid: 23331, cores: 1)
+spawned uWSGI worker 7 (pid: 23332, cores: 1)
+spawned uWSGI worker 8 (pid: 23333, cores: 1)
+spawned uWSGI http 1 (pid: 23334)
+--- no python application found, check your startup logs for errors ---
+[pid: 23330|app: -1|req: -1/1] 146.176.72.53 () {42 vars in 1170 bytes} [Thu Nov 28 13:28:25 2019] GET /home => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 23328|app: -1|req: -1/2] 146.176.72.53 () {42 vars in 1170 bytes} [Thu Nov 28 13:28:26 2019] GET /home => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 23329|app: -1|req: -1/3] 146.176.72.53 () {42 vars in 1170 bytes} [Thu Nov 28 13:28:27 2019] GET /home => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 23327|app: -1|req: -1/4] 146.176.72.53 () {42 vars in 1170 bytes} [Thu Nov 28 13:28:40 2019] GET /home => generated 21 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 23332|app: -1|req: -1/5] 164.52.24.163 () {34 vars in 535 bytes} [Thu Nov 28 13:40:44 2019] GET / => generated 21 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 23326|app: -1|req: -1/6] 178.212.49.26 () {28 vars in 397 bytes} [Thu Nov 28 13:54:25 2019] GET / => generated 21 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 23326|app: -1|req: -1/7] 71.6.165.200 () {30 vars in 475 bytes} [Thu Nov 28 14:01:15 2019] GET / => generated 21 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 23332|app: -1|req: -1/8] 71.6.165.200 () {26 vars in 298 bytes} [Thu Nov 28 14:01:16 2019] GET /robots.txt => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 23331|app: -1|req: -1/9] 71.6.165.200 () {26 vars in 300 bytes} [Thu Nov 28 14:01:16 2019] GET /sitemap.xml => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 23328|app: -1|req: -1/10] 71.6.165.200 () {26 vars in 326 bytes} [Thu Nov 28 14:01:16 2019] GET /.well-known/security.txt => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 23326|app: -1|req: -1/11] 71.6.165.200 () {32 vars in 393 bytes} [Thu Nov 28 14:01:17 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 23326|app: -1|req: -1/12] 103.30.95.126 () {28 vars in 398 bytes} [Thu Nov 28 14:33:17 2019] GET / => generated 21 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 23326|app: -1|req: -1/13] 183.60.141.184 () {28 vars in 306 bytes} [Thu Nov 28 14:48:26 2019] GET / => generated 21 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 23328|app: -1|req: -1/14] 94.173.207.135 () {40 vars in 1219 bytes} [Thu Nov 28 15:30:06 2019] GET / => generated 21 bytes in 12 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 23326|app: -1|req: -1/15] 94.173.207.135 () {40 vars in 1174 bytes} [Thu Nov 28 15:30:06 2019] GET /favicon.ico => generated 21 bytes in 21 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 23334)
+...brutally killing workers...
+Thu Nov 28 15:31:36 2019 - received message 0 from emperor
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 8 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:34987)
+running /home/40440936/.local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from /home/40440936/set09103/vassals/deploy.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 15:31:38 2019] ***
+compiled with version: 7.4.0 on 07 November 2019 11:47:29
+os: Linux-4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+nodename: webtech-07
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /home/40440936/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/40440936/set09103/
+your processes number limit is 3604
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 5
+uwsgi socket 0 bound to TCP address 127.0.0.1:36541 (port auto-assigned) fd 4
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Oct  7 2019, 17:39:04)  [GCC 7.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55f99cabee50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 656136 bytes (640 KB) for 8 cores
+*** Operational MODE: preforking ***
+added /home/40440936/set09103/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/40440936/set09103/run.py", line 3, in <module>
+    from bop import app
+  File "/home/40440936/set09103/bop/__init__.py", line 3, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ImportError: No module named flask_sqlalchemy
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 23321)
+spawned uWSGI worker 1 (pid: 27166, cores: 1)
+spawned uWSGI worker 2 (pid: 27167, cores: 1)
+spawned uWSGI worker 3 (pid: 27168, cores: 1)
+spawned uWSGI worker 4 (pid: 27169, cores: 1)
+spawned uWSGI worker 5 (pid: 27170, cores: 1)
+spawned uWSGI worker 6 (pid: 27171, cores: 1)
+spawned uWSGI worker 7 (pid: 27172, cores: 1)
+spawned uWSGI worker 8 (pid: 27173, cores: 1)
+write(): Bad file descriptor [core/utils.c line 1476]
+spawned uWSGI http 1 (pid: 27174)
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:39 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:39 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27166)...
+worker 1 killed successfully (pid: 27166)
+Respawned uWSGI worker 1 (new pid: 27175)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:40 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:40 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27175)...
+worker 1 killed successfully (pid: 27175)
+Respawned uWSGI worker 1 (new pid: 27176)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:41 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:41 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27176)...
+worker 1 killed successfully (pid: 27176)
+Respawned uWSGI worker 1 (new pid: 27177)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:42 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:42 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27177)...
+worker 1 killed successfully (pid: 27177)
+Respawned uWSGI worker 1 (new pid: 27178)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:43 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:43 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27178)...
+worker 1 killed successfully (pid: 27178)
+Respawned uWSGI worker 1 (new pid: 27179)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:44 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:44 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27179)...
+worker 1 killed successfully (pid: 27179)
+Respawned uWSGI worker 1 (new pid: 27180)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:45 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:45 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27180)...
+worker 1 killed successfully (pid: 27180)
+Respawned uWSGI worker 1 (new pid: 27181)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:46 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:46 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27181)...
+worker 1 killed successfully (pid: 27181)
+Respawned uWSGI worker 1 (new pid: 27182)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:47 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:47 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27182)...
+worker 1 killed successfully (pid: 27182)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+Respawned uWSGI worker 1 (new pid: 27183)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:50 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:50 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27183)...
+worker 1 killed successfully (pid: 27183)
+Respawned uWSGI worker 1 (new pid: 27184)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:51 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:51 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27184)...
+worker 1 killed successfully (pid: 27184)
+Respawned uWSGI worker 1 (new pid: 27188)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:52 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:52 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27188)...
+worker 1 killed successfully (pid: 27188)
+Respawned uWSGI worker 1 (new pid: 27189)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:53 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:53 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27189)...
+worker 1 killed successfully (pid: 27189)
+Respawned uWSGI worker 1 (new pid: 27190)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:54 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:54 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27190)...
+worker 1 killed successfully (pid: 27190)
+Respawned uWSGI worker 1 (new pid: 27191)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:55 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:55 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27191)...
+worker 1 killed successfully (pid: 27191)
+Respawned uWSGI worker 1 (new pid: 27192)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:56 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:56 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27192)...
+worker 1 killed successfully (pid: 27192)
+Respawned uWSGI worker 1 (new pid: 27193)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:57 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:57 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27193)...
+worker 1 killed successfully (pid: 27193)
+Respawned uWSGI worker 1 (new pid: 27194)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:31:58 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:31:58 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27194)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+worker 1 killed successfully (pid: 27194)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 27195)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:32:01 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:32:01 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27195)...
+worker 1 killed successfully (pid: 27195)
+Respawned uWSGI worker 1 (new pid: 27196)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:32:02 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:32:02 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27196)...
+worker 1 killed successfully (pid: 27196)
+Respawned uWSGI worker 1 (new pid: 27197)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:32:03 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:32:03 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27197)...
+worker 1 killed successfully (pid: 27197)
+Respawned uWSGI worker 1 (new pid: 27198)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:32:04 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:32:04 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27198)...
+worker 1 killed successfully (pid: 27198)
+Respawned uWSGI worker 1 (new pid: 27199)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:32:05 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:32:05 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27199)...
+worker 1 killed successfully (pid: 27199)
+Respawned uWSGI worker 1 (new pid: 27200)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:32:06 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:32:06 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27200)...
+Thu Nov 28 15:32:06 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:32:06 2019 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:32:06 2019 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:32:06 2019 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:32:06 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:32:06 2019 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:32:06 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 15:37:59 2019] ***
+compiled with version: 7.4.0 on 07 November 2019 11:47:29
+os: Linux-4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+nodename: webtech-07
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /home/40440936/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/40440936/set09103/
+your processes number limit is 3604
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:35967 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Oct  7 2019, 17:39:04)  [GCC 7.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x557662737ea0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 656136 bytes (640 KB) for 8 cores
+*** Operational MODE: preforking ***
+added /home/40440936/set09103/ to pythonpath.
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 27454)
+spawned uWSGI worker 1 (pid: 27463, cores: 1)
+spawned uWSGI worker 2 (pid: 27464, cores: 1)
+spawned uWSGI worker 3 (pid: 27465, cores: 1)
+spawned uWSGI worker 4 (pid: 27466, cores: 1)
+spawned uWSGI worker 5 (pid: 27467, cores: 1)
+spawned uWSGI worker 6 (pid: 27468, cores: 1)
+spawned uWSGI worker 7 (pid: 27469, cores: 1)
+spawned uWSGI worker 8 (pid: 27470, cores: 1)
+spawned uWSGI http 1 (pid: 27471)
+--- no python application found, check your startup logs for errors ---
+[pid: 27466|app: -1|req: -1/1] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:38:02 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 27465|app: -1|req: -1/2] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:38:02 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 27469|app: -1|req: -1/3] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:38:03 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 27466|app: -1|req: -1/4] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:38:03 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27465|app: -1|req: -1/5] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 15:38:04 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27469|app: -1|req: -1/6] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:38:04 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27466|app: -1|req: -1/7] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 15:38:05 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27465|app: -1|req: -1/8] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:38:05 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 27471)
+...brutally killing workers...
+Thu Nov 28 15:38:13 2019 - received message 0 from emperor
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 8 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:35967)
+running /home/40440936/.local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from /home/40440936/set09103/vassals/deploy.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 15:38:15 2019] ***
+compiled with version: 7.4.0 on 07 November 2019 11:47:29
+os: Linux-4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+nodename: webtech-07
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /home/40440936/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/40440936/set09103/
+your processes number limit is 3604
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 5
+uwsgi socket 0 bound to TCP address 127.0.0.1:43063 (port auto-assigned) fd 4
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Oct  7 2019, 17:39:04)  [GCC 7.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55e5d8de1e50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 656136 bytes (640 KB) for 8 cores
+*** Operational MODE: preforking ***
+added /home/40440936/set09103/ to pythonpath.
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 27454)
+spawned uWSGI worker 1 (pid: 27486, cores: 1)
+spawned uWSGI worker 2 (pid: 27487, cores: 1)
+spawned uWSGI worker 3 (pid: 27488, cores: 1)
+spawned uWSGI worker 4 (pid: 27489, cores: 1)
+spawned uWSGI worker 5 (pid: 27490, cores: 1)
+spawned uWSGI worker 6 (pid: 27491, cores: 1)
+spawned uWSGI worker 7 (pid: 27492, cores: 1)
+spawned uWSGI worker 8 (pid: 27493, cores: 1)
+spawned uWSGI http 1 (pid: 27494)
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:15 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:15 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27486)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+worker 1 killed successfully (pid: 27486)
+Respawned uWSGI worker 1 (new pid: 27495)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:16 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:16 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27495)...
+worker 1 killed successfully (pid: 27495)
+Respawned uWSGI worker 1 (new pid: 27497)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:17 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:17 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27497)...
+worker 1 killed successfully (pid: 27497)
+Respawned uWSGI worker 1 (new pid: 27499)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:18 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:18 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27499)...
+worker 1 killed successfully (pid: 27499)
+Respawned uWSGI worker 1 (new pid: 27501)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:19 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:19 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27501)...
+worker 1 killed successfully (pid: 27501)
+Respawned uWSGI worker 1 (new pid: 27503)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:20 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:20 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27503)...
+worker 1 killed successfully (pid: 27503)
+Respawned uWSGI worker 1 (new pid: 27505)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:21 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:21 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27505)...
+worker 1 killed successfully (pid: 27505)
+Respawned uWSGI worker 1 (new pid: 27507)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:22 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:22 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27507)...
+worker 1 killed successfully (pid: 27507)
+Respawned uWSGI worker 1 (new pid: 27509)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:23 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:23 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27509)...
+worker 1 killed successfully (pid: 27509)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+Respawned uWSGI worker 1 (new pid: 27512)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:26 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:26 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27512)...
+worker 1 killed successfully (pid: 27512)
+Respawned uWSGI worker 1 (new pid: 27513)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:27 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:27 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27513)...
+worker 1 killed successfully (pid: 27513)
+Respawned uWSGI worker 1 (new pid: 27514)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:28 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:28 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27514)...
+worker 1 killed successfully (pid: 27514)
+Respawned uWSGI worker 1 (new pid: 27515)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:29 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:29 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27515)...
+worker 1 killed successfully (pid: 27515)
+Respawned uWSGI worker 1 (new pid: 27516)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:30 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:30 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27516)...
+worker 1 killed successfully (pid: 27516)
+Respawned uWSGI worker 1 (new pid: 27517)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:31 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:31 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27517)...
+worker 1 killed successfully (pid: 27517)
+Respawned uWSGI worker 1 (new pid: 27518)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:32 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:32 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27518)...
+worker 1 killed successfully (pid: 27518)
+Respawned uWSGI worker 1 (new pid: 27519)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:33 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:33 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27519)...
+worker 1 killed successfully (pid: 27519)
+Respawned uWSGI worker 1 (new pid: 27520)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:34 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:34 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27520)...
+worker 1 killed successfully (pid: 27520)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+Respawned uWSGI worker 1 (new pid: 27521)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:37 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:37 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27521)...
+worker 1 killed successfully (pid: 27521)
+Respawned uWSGI worker 1 (new pid: 27522)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:38 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:38 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27522)...
+worker 1 killed successfully (pid: 27522)
+Respawned uWSGI worker 1 (new pid: 27523)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:39 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:39 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27523)...
+worker 1 killed successfully (pid: 27523)
+Respawned uWSGI worker 1 (new pid: 27524)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:40 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:40 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27524)...
+worker 1 killed successfully (pid: 27524)
+Respawned uWSGI worker 1 (new pid: 27525)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:41 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:41 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27525)...
+worker 1 killed successfully (pid: 27525)
+Respawned uWSGI worker 1 (new pid: 27526)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:38:42 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:38:42 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27526)...
+Thu Nov 28 15:38:43 2019 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:38:43 2019 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:38:43 2019 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:38:43 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:38:43 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:38:43 2019 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:38:43 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 15:43:02 2019] ***
+compiled with version: 7.4.0 on 07 November 2019 11:47:29
+os: Linux-4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+nodename: webtech-07
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /home/40440936/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/40440936/set09103/
+your processes number limit is 3604
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:33065 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Oct  7 2019, 17:39:04)  [GCC 7.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x559bb7e13ea0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 656136 bytes (640 KB) for 8 cores
+*** Operational MODE: preforking ***
+added /home/40440936/set09103/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/40440936/set09103/run.py", line 3, in <module>
+    from bop import app
+  File "/home/40440936/set09103/bop/__init__.py", line 3, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ImportError: No module named flask_sqlalchemy
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 27715)
+spawned uWSGI worker 1 (pid: 27727, cores: 1)
+spawned uWSGI worker 2 (pid: 27728, cores: 1)
+spawned uWSGI worker 3 (pid: 27729, cores: 1)
+spawned uWSGI worker 4 (pid: 27730, cores: 1)
+spawned uWSGI worker 5 (pid: 27731, cores: 1)
+spawned uWSGI worker 6 (pid: 27732, cores: 1)
+spawned uWSGI worker 7 (pid: 27733, cores: 1)
+spawned uWSGI worker 8 (pid: 27734, cores: 1)
+spawned uWSGI http 1 (pid: 27735)
+--- no python application found, check your startup logs for errors ---
+[pid: 27731|app: -1|req: -1/1] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:04 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 27729|app: -1|req: -1/2] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:04 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 27730|app: -1|req: -1/3] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:05 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 27732|app: -1|req: -1/4] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:05 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 27731|app: -1|req: -1/5] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:05 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27729|app: -1|req: -1/6] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:05 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27732|app: -1|req: -1/7] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:05 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27732|app: -1|req: -1/8] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:05 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27734|app: -1|req: -1/9] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:05 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/10] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:05 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/11] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:05 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27731|app: -1|req: -1/12] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:06 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27730|app: -1|req: -1/13] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:06 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/14] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:06 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/15] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:06 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/16] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:06 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/17] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:06 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/18] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:06 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/19] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:06 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/20] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:06 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/21] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:06 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/22] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:06 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/23] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:06 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/24] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:06 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/25] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:07 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/26] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:07 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/27] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:07 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/28] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:07 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/29] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:07 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/30] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:07 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/31] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:07 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/32] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:07 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/33] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:07 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/34] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:07 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/35] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:07 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/36] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:07 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/37] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:07 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/38] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:08 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/39] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:08 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/40] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:08 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/41] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:08 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/42] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:08 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/43] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:08 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/44] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:08 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/45] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:08 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/46] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:08 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/47] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:08 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/48] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:08 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/49] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:08 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/50] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:09 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/51] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:09 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/52] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:43:09 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/53] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:09 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/54] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:43:09 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/55] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 15:48:19 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27730|app: -1|req: -1/56] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:48:19 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27729|app: -1|req: -1/57] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 15:48:21 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27734|app: -1|req: -1/58] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:48:21 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/59] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 15:48:22 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27727|app: -1|req: -1/60] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:48:22 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 27735)
+...brutally killing workers...
+Thu Nov 28 15:48:27 2019 - received message 0 from emperor
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 8 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:33065)
+running /home/40440936/.local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from /home/40440936/set09103/vassals/deploy.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 15:48:29 2019] ***
+compiled with version: 7.4.0 on 07 November 2019 11:47:29
+os: Linux-4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+nodename: webtech-07
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /home/40440936/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/40440936/set09103/
+your processes number limit is 3604
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 5
+uwsgi socket 0 bound to TCP address 127.0.0.1:34239 (port auto-assigned) fd 4
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Oct  7 2019, 17:39:04)  [GCC 7.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x561830a3ce50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 656136 bytes (640 KB) for 8 cores
+*** Operational MODE: preforking ***
+added /home/40440936/set09103/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/40440936/set09103/run.py", line 3, in <module>
+    from bop import app
+  File "/home/40440936/set09103/bop/__init__.py", line 3, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ImportError: No module named flask_sqlalchemy
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 27715)
+spawned uWSGI worker 1 (pid: 27883, cores: 1)
+spawned uWSGI worker 2 (pid: 27884, cores: 1)
+spawned uWSGI worker 3 (pid: 27885, cores: 1)
+spawned uWSGI worker 4 (pid: 27886, cores: 1)
+spawned uWSGI worker 5 (pid: 27887, cores: 1)
+spawned uWSGI worker 6 (pid: 27888, cores: 1)
+spawned uWSGI worker 7 (pid: 27889, cores: 1)
+spawned uWSGI worker 8 (pid: 27890, cores: 1)
+spawned uWSGI http 1 (pid: 27891)
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:29 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:29 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27883)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+worker 1 killed successfully (pid: 27883)
+Respawned uWSGI worker 1 (new pid: 27892)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:30 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:30 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27892)...
+worker 1 killed successfully (pid: 27892)
+Respawned uWSGI worker 1 (new pid: 27893)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:31 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:31 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27893)...
+worker 1 killed successfully (pid: 27893)
+Respawned uWSGI worker 1 (new pid: 27894)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:32 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:32 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27894)...
+worker 1 killed successfully (pid: 27894)
+Respawned uWSGI worker 1 (new pid: 27895)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:33 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:33 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27895)...
+worker 1 killed successfully (pid: 27895)
+Respawned uWSGI worker 1 (new pid: 27896)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:34 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:34 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27896)...
+worker 1 killed successfully (pid: 27896)
+Respawned uWSGI worker 1 (new pid: 27897)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:35 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:35 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27897)...
+worker 1 killed successfully (pid: 27897)
+Respawned uWSGI worker 1 (new pid: 27898)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:36 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:36 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27898)...
+worker 1 killed successfully (pid: 27898)
+Respawned uWSGI worker 1 (new pid: 27899)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:37 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:37 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27899)...
+worker 1 killed successfully (pid: 27899)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+Respawned uWSGI worker 1 (new pid: 27900)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:40 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:40 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27900)...
+worker 1 killed successfully (pid: 27900)
+Respawned uWSGI worker 1 (new pid: 27901)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:41 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:41 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27901)...
+worker 1 killed successfully (pid: 27901)
+Respawned uWSGI worker 1 (new pid: 27902)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:42 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:42 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27902)...
+worker 1 killed successfully (pid: 27902)
+Respawned uWSGI worker 1 (new pid: 27903)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:43 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:43 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27903)...
+worker 1 killed successfully (pid: 27903)
+Respawned uWSGI worker 1 (new pid: 27904)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:44 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:44 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27904)...
+worker 1 killed successfully (pid: 27904)
+Respawned uWSGI worker 1 (new pid: 27905)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:45 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:45 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27905)...
+worker 1 killed successfully (pid: 27905)
+Respawned uWSGI worker 1 (new pid: 27906)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:46 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:46 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27906)...
+worker 1 killed successfully (pid: 27906)
+Respawned uWSGI worker 1 (new pid: 27907)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:47 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:47 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27907)...
+worker 1 killed successfully (pid: 27907)
+Respawned uWSGI worker 1 (new pid: 27908)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:48 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:48 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27908)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+worker 1 killed successfully (pid: 27908)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+Respawned uWSGI worker 1 (new pid: 27909)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:51 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:51 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27909)...
+worker 1 killed successfully (pid: 27909)
+Respawned uWSGI worker 1 (new pid: 27910)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:52 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:52 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27910)...
+worker 1 killed successfully (pid: 27910)
+Respawned uWSGI worker 1 (new pid: 27911)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:53 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:53 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27911)...
+worker 1 killed successfully (pid: 27911)
+Respawned uWSGI worker 1 (new pid: 27912)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:54 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:54 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27912)...
+worker 1 killed successfully (pid: 27912)
+Respawned uWSGI worker 1 (new pid: 27913)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:55 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:55 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27913)...
+worker 1 killed successfully (pid: 27913)
+Respawned uWSGI worker 1 (new pid: 27914)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:48:56 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:48:56 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27914)...
+Thu Nov 28 15:48:57 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:48:57 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:48:57 2019 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:48:57 2019 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:48:57 2019 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:48:57 2019 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:48:57 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 15:51:19 2019] ***
+compiled with version: 7.4.0 on 07 November 2019 11:47:29
+os: Linux-4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+nodename: webtech-07
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /home/40440936/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/40440936/set09103/
+your processes number limit is 3604
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:35011 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Oct  7 2019, 17:39:04)  [GCC 7.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5599c062dea0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 656136 bytes (640 KB) for 8 cores
+*** Operational MODE: preforking ***
+added /home/40440936/set09103/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/40440936/set09103/run.py", line 3, in <module>
+    from bop import app
+  File "/home/40440936/set09103/bop/__init__.py", line 3, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ImportError: No module named flask_sqlalchemy
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28393)
+spawned uWSGI worker 1 (pid: 28409, cores: 1)
+spawned uWSGI worker 2 (pid: 28410, cores: 1)
+spawned uWSGI worker 3 (pid: 28411, cores: 1)
+spawned uWSGI worker 4 (pid: 28412, cores: 1)
+spawned uWSGI worker 5 (pid: 28413, cores: 1)
+spawned uWSGI worker 6 (pid: 28414, cores: 1)
+spawned uWSGI worker 7 (pid: 28415, cores: 1)
+spawned uWSGI worker 8 (pid: 28416, cores: 1)
+spawned uWSGI http 1 (pid: 28417)
+--- no python application found, check your startup logs for errors ---
+[pid: 28413|app: -1|req: -1/1] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 15:51:21 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28412|app: -1|req: -1/2] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:51:22 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28411|app: -1|req: -1/3] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 15:51:22 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28410|app: -1|req: -1/4] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:51:23 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28414|app: -1|req: -1/5] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 15:51:23 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28412|app: -1|req: -1/6] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:51:23 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28416|app: -1|req: -1/7] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 15:51:24 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28409|app: -1|req: -1/8] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:51:24 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+Thu Nov 28 15:52:27 2019 - received message 1 from emperor
+gateway "uWSGI http 1" has been buried (pid: 28417)
+...gracefully killing workers...
+Gracefully killing worker 2 (pid: 28410)...
+Gracefully killing worker 3 (pid: 28411)...
+Gracefully killing worker 4 (pid: 28412)...
+Gracefully killing worker 5 (pid: 28413)...
+Gracefully killing worker 6 (pid: 28414)...
+Gracefully killing worker 7 (pid: 28415)...
+Gracefully killing worker 8 (pid: 28416)...
+Gracefully killing worker 1 (pid: 28409)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 8 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:35011)
+running /home/40440936/.local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from /home/40440936/set09103/vassals/deploy.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 15:52:28 2019] ***
+compiled with version: 7.4.0 on 07 November 2019 11:47:29
+os: Linux-4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+nodename: webtech-07
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /home/40440936/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/40440936/set09103/bop
+your processes number limit is 3604
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 5
+uwsgi socket 0 bound to TCP address 127.0.0.1:46617 (port auto-assigned) fd 4
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Oct  7 2019, 17:39:04)  [GCC 7.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x563a7009ce50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 656136 bytes (640 KB) for 8 cores
+*** Operational MODE: preforking ***
+added /home/40440936/set09103/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/40440936/set09103/run.py", line 3, in <module>
+    from bop import app
+  File "/home/40440936/set09103/bop/__init__.py", line 3, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ImportError: No module named flask_sqlalchemy
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 28393)
+spawned uWSGI worker 1 (pid: 28440, cores: 1)
+spawned uWSGI worker 2 (pid: 28441, cores: 1)
+spawned uWSGI worker 3 (pid: 28442, cores: 1)
+spawned uWSGI worker 4 (pid: 28443, cores: 1)
+spawned uWSGI worker 5 (pid: 28444, cores: 1)
+spawned uWSGI worker 6 (pid: 28445, cores: 1)
+spawned uWSGI worker 7 (pid: 28446, cores: 1)
+spawned uWSGI worker 8 (pid: 28447, cores: 1)
+spawned uWSGI http 1 (pid: 28448)
+gateway "uWSGI http 1" has been buried (pid: 28448)
+...brutally killing workers...
+Thu Nov 28 15:52:35 2019 - received message 0 from emperor
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 8 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 4 mapped to socket 0 (127.0.0.1:46617)
+running /home/40440936/.local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from /home/40440936/set09103/vassals/deploy.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 15:52:37 2019] ***
+compiled with version: 7.4.0 on 07 November 2019 11:47:29
+os: Linux-4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+nodename: webtech-07
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /home/40440936/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/40440936/set09103/bop
+your processes number limit is 3604
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 5
+uwsgi socket 0 bound to TCP address 127.0.0.1:37155 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Oct  7 2019, 17:39:04)  [GCC 7.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x556edf492e50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 656136 bytes (640 KB) for 8 cores
+*** Operational MODE: preforking ***
+added /home/40440936/set09103/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/40440936/set09103/run.py", line 3, in <module>
+    from bop import app
+  File "/home/40440936/set09103/bop/__init__.py", line 3, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ImportError: No module named flask_sqlalchemy
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 28393)
+spawned uWSGI worker 1 (pid: 28465, cores: 1)
+spawned uWSGI worker 2 (pid: 28466, cores: 1)
+spawned uWSGI worker 3 (pid: 28467, cores: 1)
+spawned uWSGI worker 4 (pid: 28468, cores: 1)
+spawned uWSGI worker 5 (pid: 28469, cores: 1)
+spawned uWSGI worker 6 (pid: 28470, cores: 1)
+spawned uWSGI worker 7 (pid: 28471, cores: 1)
+spawned uWSGI worker 8 (pid: 28472, cores: 1)
+spawned uWSGI http 1 (pid: 28473)
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:37 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:37 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28465)...
+write(): Bad file descriptor [core/utils.c line 1476]
+worker 1 killed successfully (pid: 28465)
+Respawned uWSGI worker 1 (new pid: 28474)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:38 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:38 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28474)...
+worker 1 killed successfully (pid: 28474)
+Respawned uWSGI worker 1 (new pid: 28475)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:39 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:39 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28475)...
+worker 1 killed successfully (pid: 28475)
+Respawned uWSGI worker 1 (new pid: 28476)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:40 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:40 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28476)...
+worker 1 killed successfully (pid: 28476)
+Respawned uWSGI worker 1 (new pid: 28477)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:41 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:41 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28477)...
+worker 1 killed successfully (pid: 28477)
+Respawned uWSGI worker 1 (new pid: 28478)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:42 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:42 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28478)...
+worker 1 killed successfully (pid: 28478)
+Respawned uWSGI worker 1 (new pid: 28479)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:43 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:43 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28479)...
+worker 1 killed successfully (pid: 28479)
+Respawned uWSGI worker 1 (new pid: 28480)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:44 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:44 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28480)...
+worker 1 killed successfully (pid: 28480)
+Respawned uWSGI worker 1 (new pid: 28481)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:45 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:45 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28481)...
+worker 1 killed successfully (pid: 28481)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+Respawned uWSGI worker 1 (new pid: 28482)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:48 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:48 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28482)...
+worker 1 killed successfully (pid: 28482)
+Respawned uWSGI worker 1 (new pid: 28483)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:49 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:49 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28483)...
+worker 1 killed successfully (pid: 28483)
+Respawned uWSGI worker 1 (new pid: 28484)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:50 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:50 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28484)...
+worker 1 killed successfully (pid: 28484)
+Respawned uWSGI worker 1 (new pid: 28490)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:51 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:51 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28490)...
+worker 1 killed successfully (pid: 28490)
+Respawned uWSGI worker 1 (new pid: 28491)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:52 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:52 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28491)...
+worker 1 killed successfully (pid: 28491)
+Respawned uWSGI worker 1 (new pid: 28495)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:53 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:53 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28495)...
+worker 1 killed successfully (pid: 28495)
+Respawned uWSGI worker 1 (new pid: 28496)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:54 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:54 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28496)...
+worker 1 killed successfully (pid: 28496)
+Respawned uWSGI worker 1 (new pid: 28497)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:55 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:55 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28497)...
+worker 1 killed successfully (pid: 28497)
+Respawned uWSGI worker 1 (new pid: 28498)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:56 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:56 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28498)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+worker 1 killed successfully (pid: 28498)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 28499)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:52:59 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:52:59 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28499)...
+worker 1 killed successfully (pid: 28499)
+Respawned uWSGI worker 1 (new pid: 28500)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:53:00 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:53:00 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28500)...
+worker 1 killed successfully (pid: 28500)
+Respawned uWSGI worker 1 (new pid: 28501)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:53:01 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:53:01 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28501)...
+worker 1 killed successfully (pid: 28501)
+Respawned uWSGI worker 1 (new pid: 28502)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:53:02 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:53:02 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28502)...
+worker 1 killed successfully (pid: 28502)
+Respawned uWSGI worker 1 (new pid: 28503)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:53:03 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:53:03 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28503)...
+Thu Nov 28 15:53:04 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:53:04 2019 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:53:04 2019 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:53:04 2019 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:53:04 2019 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:53:04 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:53:04 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 15:53:11 2019] ***
+compiled with version: 7.4.0 on 07 November 2019 11:47:29
+os: Linux-4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+nodename: webtech-07
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /home/40440936/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/40440936/set09103/bop
+your processes number limit is 3604
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36773 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Oct  7 2019, 17:39:04)  [GCC 7.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55c92f117ea0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 656136 bytes (640 KB) for 8 cores
+*** Operational MODE: preforking ***
+added /home/40440936/set09103/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/40440936/set09103/run.py", line 3, in <module>
+    from bop import app
+  File "/home/40440936/set09103/bop/__init__.py", line 3, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ImportError: No module named flask_sqlalchemy
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28559)
+spawned uWSGI worker 1 (pid: 28561, cores: 1)
+spawned uWSGI worker 2 (pid: 28562, cores: 1)
+spawned uWSGI worker 3 (pid: 28563, cores: 1)
+spawned uWSGI worker 4 (pid: 28564, cores: 1)
+spawned uWSGI worker 5 (pid: 28565, cores: 1)
+spawned uWSGI worker 6 (pid: 28566, cores: 1)
+spawned uWSGI worker 7 (pid: 28567, cores: 1)
+spawned uWSGI worker 8 (pid: 28568, cores: 1)
+spawned uWSGI http 1 (pid: 28569)
+--- no python application found, check your startup logs for errors ---
+[pid: 28565|app: -1|req: -1/1] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:53:14 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28564|app: -1|req: -1/2] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:53:14 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28563|app: -1|req: -1/3] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:53:16 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28566|app: -1|req: -1/4] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:53:16 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28564|app: -1|req: -1/5] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:53:16 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28565|app: -1|req: -1/6] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:53:16 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28562|app: -1|req: -1/7] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:53:16 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28564|app: -1|req: -1/8] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:53:16 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Thu Nov 28 15:53:19 2019 - received message 0 from emperor
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 28569)
+...brutally killing workers...
+gateway "uWSGI http 1" has been buried (pid: 28569)
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 8 buried after 2 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 15:54:26 2019] ***
+compiled with version: 7.4.0 on 07 November 2019 11:47:29
+os: Linux-4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+nodename: webtech-07
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /home/40440936/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/40440936/set09103/
+your processes number limit is 3604
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:43673 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Oct  7 2019, 17:39:04)  [GCC 7.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x563ddad87e30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 656136 bytes (640 KB) for 8 cores
+*** Operational MODE: preforking ***
+added /home/40440936/set09103/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/40440936/set09103/run.py", line 3, in <module>
+    from bop import app
+  File "/home/40440936/set09103/bop/__init__.py", line 3, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ImportError: No module named flask_sqlalchemy
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28675)
+spawned uWSGI worker 1 (pid: 28690, cores: 1)
+spawned uWSGI worker 2 (pid: 28691, cores: 1)
+spawned uWSGI worker 3 (pid: 28692, cores: 1)
+spawned uWSGI worker 4 (pid: 28693, cores: 1)
+spawned uWSGI worker 5 (pid: 28694, cores: 1)
+spawned uWSGI worker 6 (pid: 28695, cores: 1)
+spawned uWSGI worker 7 (pid: 28696, cores: 1)
+spawned uWSGI worker 8 (pid: 28697, cores: 1)
+spawned uWSGI http 1 (pid: 28698)
+--- no python application found, check your startup logs for errors ---
+[pid: 28697|app: -1|req: -1/1] 94.173.207.135 () {42 vars in 1250 bytes} [Thu Nov 28 15:54:26 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28694|app: -1|req: -1/2] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:54:27 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28693|app: -1|req: -1/3] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 15:54:28 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28695|app: -1|req: -1/4] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:54:28 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28692|app: -1|req: -1/5] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 15:54:29 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28694|app: -1|req: -1/6] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:54:29 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28691|app: -1|req: -1/7] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 15:54:30 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28692|app: -1|req: -1/8] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 15:54:30 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Thu Nov 28 15:54:36 2019 - received message 1 from emperor
+gateway "uWSGI http 1" has been buried (pid: 28698)
+...gracefully killing workers...
+Gracefully killing worker 4 (pid: 28693)...
+Gracefully killing worker 7 (pid: 28696)...
+Gracefully killing worker 5 (pid: 28694)...
+Gracefully killing worker 6 (pid: 28695)...
+Gracefully killing worker 2 (pid: 28691)...
+Gracefully killing worker 3 (pid: 28692)...
+Gracefully killing worker 8 (pid: 28697)...
+Gracefully killing worker 1 (pid: 28690)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 8 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:43673)
+running /home/40440936/.local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from /home/40440936/set09103/vassals/deploy.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 15:54:37 2019] ***
+compiled with version: 7.4.0 on 07 November 2019 11:47:29
+os: Linux-4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+nodename: webtech-07
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /home/40440936/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/40440936/set09103/
+your processes number limit is 3604
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 5
+uwsgi socket 0 bound to TCP address 127.0.0.1:39069 (port auto-assigned) fd 4
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Oct  7 2019, 17:39:04)  [GCC 7.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x558ded110e50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 656136 bytes (640 KB) for 8 cores
+*** Operational MODE: preforking ***
+added /home/40440936/set09103/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/40440936/set09103/run.py", line 3, in <module>
+    from bop import app
+  File "/home/40440936/set09103/bop/__init__.py", line 3, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ImportError: No module named flask_sqlalchemy
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 28675)
+spawned uWSGI worker 1 (pid: 28700, cores: 1)
+spawned uWSGI worker 2 (pid: 28701, cores: 1)
+spawned uWSGI worker 3 (pid: 28702, cores: 1)
+spawned uWSGI worker 4 (pid: 28703, cores: 1)
+spawned uWSGI worker 5 (pid: 28704, cores: 1)
+spawned uWSGI worker 6 (pid: 28705, cores: 1)
+spawned uWSGI worker 7 (pid: 28706, cores: 1)
+spawned uWSGI worker 8 (pid: 28707, cores: 1)
+spawned uWSGI http 1 (pid: 28708)
+gateway "uWSGI http 1" has been buried (pid: 28708)
+...brutally killing workers...
+Thu Nov 28 15:54:40 2019 - received message 0 from emperor
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 8 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 4 mapped to socket 0 (127.0.0.1:39069)
+running /home/40440936/.local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from /home/40440936/set09103/vassals/deploy.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 15:54:42 2019] ***
+compiled with version: 7.4.0 on 07 November 2019 11:47:29
+os: Linux-4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+nodename: webtech-07
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /home/40440936/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/40440936/set09103/
+your processes number limit is 3604
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 5
+uwsgi socket 0 bound to TCP address 127.0.0.1:37043 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Oct  7 2019, 17:39:04)  [GCC 7.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55dcecdcee50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 656136 bytes (640 KB) for 8 cores
+*** Operational MODE: preforking ***
+added /home/40440936/set09103/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/40440936/set09103/run.py", line 3, in <module>
+    from bop import app
+  File "/home/40440936/set09103/bop/__init__.py", line 3, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ImportError: No module named flask_sqlalchemy
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 28675)
+spawned uWSGI worker 1 (pid: 28730, cores: 1)
+spawned uWSGI worker 2 (pid: 28731, cores: 1)
+spawned uWSGI worker 3 (pid: 28732, cores: 1)
+spawned uWSGI worker 4 (pid: 28733, cores: 1)
+spawned uWSGI worker 5 (pid: 28734, cores: 1)
+spawned uWSGI worker 6 (pid: 28735, cores: 1)
+spawned uWSGI worker 7 (pid: 28736, cores: 1)
+spawned uWSGI worker 8 (pid: 28737, cores: 1)
+spawned uWSGI http 1 (pid: 28738)
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:54:43 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:54:43 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28730)...
+write(): Bad file descriptor [core/utils.c line 1476]
+worker 1 killed successfully (pid: 28730)
+Respawned uWSGI worker 1 (new pid: 28739)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:54:44 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:54:44 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28739)...
+worker 1 killed successfully (pid: 28739)
+Respawned uWSGI worker 1 (new pid: 28740)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:54:45 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:54:45 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28740)...
+worker 1 killed successfully (pid: 28740)
+Respawned uWSGI worker 1 (new pid: 28741)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:54:46 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:54:46 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28741)...
+worker 1 killed successfully (pid: 28741)
+Respawned uWSGI worker 1 (new pid: 28742)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:54:47 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:54:47 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28742)...
+worker 1 killed successfully (pid: 28742)
+Respawned uWSGI worker 1 (new pid: 28743)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:54:48 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:54:48 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28743)...
+worker 1 killed successfully (pid: 28743)
+Respawned uWSGI worker 1 (new pid: 28744)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:54:49 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:54:49 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28744)...
+worker 1 killed successfully (pid: 28744)
+Respawned uWSGI worker 1 (new pid: 28745)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:54:50 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:54:50 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28745)...
+worker 1 killed successfully (pid: 28745)
+Respawned uWSGI worker 1 (new pid: 28746)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:54:51 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:54:51 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28746)...
+worker 1 killed successfully (pid: 28746)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+Respawned uWSGI worker 1 (new pid: 28747)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:54:54 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:54:54 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28747)...
+worker 1 killed successfully (pid: 28747)
+Respawned uWSGI worker 1 (new pid: 28748)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:54:55 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:54:55 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28748)...
+worker 1 killed successfully (pid: 28748)
+Respawned uWSGI worker 1 (new pid: 28749)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:54:56 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:54:56 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28749)...
+worker 1 killed successfully (pid: 28749)
+Respawned uWSGI worker 1 (new pid: 28750)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:54:57 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:54:57 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28750)...
+worker 1 killed successfully (pid: 28750)
+Respawned uWSGI worker 1 (new pid: 28751)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:54:58 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:54:58 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28751)...
+worker 1 killed successfully (pid: 28751)
+Respawned uWSGI worker 1 (new pid: 28752)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:54:59 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:54:59 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28752)...
+worker 1 killed successfully (pid: 28752)
+Respawned uWSGI worker 1 (new pid: 28753)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:55:00 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:55:00 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28753)...
+worker 1 killed successfully (pid: 28753)
+Respawned uWSGI worker 1 (new pid: 28754)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:55:01 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:55:01 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28754)...
+worker 1 killed successfully (pid: 28754)
+Respawned uWSGI worker 1 (new pid: 28758)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:55:02 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:55:02 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28758)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+worker 1 killed successfully (pid: 28758)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+Respawned uWSGI worker 1 (new pid: 28759)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:55:05 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:55:05 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28759)...
+worker 1 killed successfully (pid: 28759)
+Respawned uWSGI worker 1 (new pid: 28760)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:55:06 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:55:06 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28760)...
+worker 1 killed successfully (pid: 28760)
+Respawned uWSGI worker 1 (new pid: 28761)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:55:07 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:55:07 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28761)...
+worker 1 killed successfully (pid: 28761)
+Respawned uWSGI worker 1 (new pid: 28762)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:55:08 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:55:08 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28762)...
+worker 1 killed successfully (pid: 28762)
+Respawned uWSGI worker 1 (new pid: 28763)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:55:09 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:55:09 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28763)...
+worker 1 killed successfully (pid: 28763)
+Respawned uWSGI worker 1 (new pid: 28767)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 15:55:10 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 15:55:10 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28767)...
+Thu Nov 28 15:55:10 2019 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:55:10 2019 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:55:10 2019 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:55:10 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:55:10 2019 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:55:10 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 15:55:10 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 16:00:13 2019] ***
+compiled with version: 7.4.0 on 07 November 2019 11:47:29
+os: Linux-4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+nodename: webtech-07
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /home/40440936/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/40440936/set09103/
+your processes number limit is 3604
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:43245 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Oct  7 2019, 17:39:04)  [GCC 7.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55e3716e3ea0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 656136 bytes (640 KB) for 8 cores
+*** Operational MODE: preforking ***
+added /home/40440936/set09103/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/40440936/set09103/run.py", line 3, in <module>
+    from bop import app
+  File "/home/40440936/set09103/bop/__init__.py", line 3, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ImportError: No module named flask_sqlalchemy
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28913)
+spawned uWSGI worker 1 (pid: 28925, cores: 1)
+spawned uWSGI worker 2 (pid: 28926, cores: 1)
+spawned uWSGI worker 3 (pid: 28927, cores: 1)
+spawned uWSGI worker 4 (pid: 28928, cores: 1)
+spawned uWSGI worker 5 (pid: 28929, cores: 1)
+spawned uWSGI worker 6 (pid: 28930, cores: 1)
+spawned uWSGI worker 7 (pid: 28931, cores: 1)
+spawned uWSGI worker 8 (pid: 28932, cores: 1)
+spawned uWSGI http 1 (pid: 28933)
+--- no python application found, check your startup logs for errors ---
+[pid: 28928|app: -1|req: -1/1] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 16:00:17 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28927|app: -1|req: -1/2] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 16:00:17 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28929|app: -1|req: -1/3] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 16:00:18 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28930|app: -1|req: -1/4] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 16:00:18 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28928|app: -1|req: -1/5] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 16:00:18 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28929|app: -1|req: -1/6] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 16:00:18 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28926|app: -1|req: -1/7] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 16:00:19 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28926|app: -1|req: -1/8] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 16:00:19 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/9] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 16:00:19 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/10] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 16:00:19 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28927|app: -1|req: -1/11] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 16:00:19 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28931|app: -1|req: -1/12] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 16:00:20 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/13] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 16:00:20 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28928|app: -1|req: -1/14] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 16:00:20 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/15] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 16:00:20 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/16] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 16:00:20 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/17] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 16:00:20 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/18] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 16:00:20 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/19] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 16:00:20 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/20] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 16:00:20 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/21] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 16:00:20 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/22] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 16:00:20 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/23] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 16:00:21 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/24] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 16:00:21 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/25] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 16:00:21 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/26] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 16:00:21 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/27] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 16:00:21 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/28] 94.173.207.135 () {44 vars in 1272 bytes} [Thu Nov 28 16:00:21 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28925|app: -1|req: -1/29] 94.173.207.135 () {44 vars in 1227 bytes} [Thu Nov 28 16:00:21 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 28933)
+...brutally killing workers...
+Thu Nov 28 16:00:25 2019 - received message 0 from emperor
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 8 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:43245)
+running /home/40440936/.local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from /home/40440936/set09103/vassals/deploy.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 16:00:27 2019] ***
+compiled with version: 7.4.0 on 07 November 2019 11:47:29
+os: Linux-4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+nodename: webtech-07
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /home/40440936/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/40440936/set09103/
+your processes number limit is 3604
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 5
+uwsgi socket 0 bound to TCP address 127.0.0.1:37949 (port auto-assigned) fd 4
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Oct  7 2019, 17:39:04)  [GCC 7.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5626a572ee50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 656136 bytes (640 KB) for 8 cores
+*** Operational MODE: preforking ***
+added /home/40440936/set09103/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/40440936/set09103/run.py", line 3, in <module>
+    from bop import app
+  File "/home/40440936/set09103/bop/__init__.py", line 3, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ImportError: No module named flask_sqlalchemy
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 28913)
+spawned uWSGI worker 1 (pid: 28957, cores: 1)
+spawned uWSGI worker 2 (pid: 28958, cores: 1)
+spawned uWSGI worker 3 (pid: 28959, cores: 1)
+spawned uWSGI worker 4 (pid: 28960, cores: 1)
+spawned uWSGI worker 5 (pid: 28961, cores: 1)
+spawned uWSGI worker 6 (pid: 28962, cores: 1)
+spawned uWSGI worker 7 (pid: 28963, cores: 1)
+spawned uWSGI worker 8 (pid: 28964, cores: 1)
+spawned uWSGI http 1 (pid: 28965)
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:27 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:27 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28957)...
+write(): Bad file descriptor [core/utils.c line 1476]
+worker 1 killed successfully (pid: 28957)
+Respawned uWSGI worker 1 (new pid: 28966)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:28 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:28 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28966)...
+worker 1 killed successfully (pid: 28966)
+Respawned uWSGI worker 1 (new pid: 28967)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:29 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:29 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28967)...
+worker 1 killed successfully (pid: 28967)
+Respawned uWSGI worker 1 (new pid: 28968)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:30 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:30 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28968)...
+worker 1 killed successfully (pid: 28968)
+Respawned uWSGI worker 1 (new pid: 28969)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:31 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:31 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28969)...
+worker 1 killed successfully (pid: 28969)
+Respawned uWSGI worker 1 (new pid: 28970)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:32 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:32 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28970)...
+worker 1 killed successfully (pid: 28970)
+Respawned uWSGI worker 1 (new pid: 28971)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:33 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:33 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28971)...
+worker 1 killed successfully (pid: 28971)
+Respawned uWSGI worker 1 (new pid: 28972)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:34 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:34 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28972)...
+worker 1 killed successfully (pid: 28972)
+Respawned uWSGI worker 1 (new pid: 28973)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:35 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:35 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28973)...
+worker 1 killed successfully (pid: 28973)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+Respawned uWSGI worker 1 (new pid: 28974)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:38 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:38 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28974)...
+worker 1 killed successfully (pid: 28974)
+Respawned uWSGI worker 1 (new pid: 28975)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:39 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:39 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28975)...
+worker 1 killed successfully (pid: 28975)
+Respawned uWSGI worker 1 (new pid: 28976)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:40 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:40 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28976)...
+worker 1 killed successfully (pid: 28976)
+Respawned uWSGI worker 1 (new pid: 28977)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:41 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:41 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28977)...
+worker 1 killed successfully (pid: 28977)
+Respawned uWSGI worker 1 (new pid: 28978)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:42 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:42 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28978)...
+worker 1 killed successfully (pid: 28978)
+Respawned uWSGI worker 1 (new pid: 28979)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:43 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:43 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28979)...
+worker 1 killed successfully (pid: 28979)
+Respawned uWSGI worker 1 (new pid: 28980)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:44 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:44 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28980)...
+worker 1 killed successfully (pid: 28980)
+Respawned uWSGI worker 1 (new pid: 28981)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:45 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:45 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28981)...
+worker 1 killed successfully (pid: 28981)
+Respawned uWSGI worker 1 (new pid: 28982)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:46 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:46 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28982)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+worker 1 killed successfully (pid: 28982)
+worker respawning too fast !!! i have to sleep a bit (2 seconds)...
+write(): Bad file descriptor [core/utils.c line 1476]
+write(): Bad file descriptor [core/utils.c line 1476]
+Respawned uWSGI worker 1 (new pid: 28983)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:49 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:49 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28983)...
+worker 1 killed successfully (pid: 28983)
+Respawned uWSGI worker 1 (new pid: 28984)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:50 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:50 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28984)...
+worker 1 killed successfully (pid: 28984)
+Respawned uWSGI worker 1 (new pid: 28985)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:51 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:51 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28985)...
+worker 1 killed successfully (pid: 28985)
+Respawned uWSGI worker 1 (new pid: 28986)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:52 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:52 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28986)...
+worker 1 killed successfully (pid: 28986)
+Respawned uWSGI worker 1 (new pid: 28987)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:53 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:53 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28987)...
+worker 1 killed successfully (pid: 28987)
+Respawned uWSGI worker 1 (new pid: 28988)
+emperor-i-am-ready-to-accept/write(): Bad file descriptor [core/uwsgi.c line 3576]
+Thu Nov 28 16:00:54 2019 - lost communication with the Emperor, goodbye...
+Thu Nov 28 16:00:54 2019 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28988)...
+Thu Nov 28 16:00:55 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 16:00:55 2019 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 16:00:55 2019 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 16:00:55 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 16:00:55 2019 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 16:00:55 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 28 16:00:55 2019 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!

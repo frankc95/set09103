@@ -77,15 +77,46 @@ transform: translateX(0px);
 
 .bgimage {
   width:100%;
-  height:500px;
-  background: url('https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c');
+  height:100vh;
+  background: url('https://www.blissofpain.co.uk/gallery/sun22052017/_DSC0869.jpg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size:cover;
   background-attachment: fixed;
   margin-top: -25px;
   margin-bottom: 20px;
   display: flex;
+}
+img.bgimage-image {
+    height: 300px;
+    margin-bottom: 100px;
+}
+img.featurette-image.img-fluid.mx-auto {
+    width: 80%;
+    height: auto;
+}
+.row.featurette {
+    justify-content: space-evenly;
+}
+hr.featurette-divider {
+    margin: 30px 0;
+}
+.order-scd{
+    align-self: flex-end;
+}
+.col-md-6 p{
+    text-align: center;
+    margin-top: 20px;    
+}
+img.rounded-circle {
+    height: 140px;
+    width: 140px;
+}
+.col-lg-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .container-fluid{
   display: flex;
@@ -113,6 +144,9 @@ transform: translateX(0px);
    align-items: center;
    padding-top: 50px;
 }
+.col-md-12 img{
+   padding-top:0;
+}
 .col-md-12 h1{
    align-self: flex-start;
 }
@@ -137,7 +171,7 @@ a.article-title:hover {
 
 .article-img {
   height: 65px!important;
-  width: 65px;
+  width: 65px!important;
   margin-right: 16px;
 }
 
