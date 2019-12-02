@@ -3,9 +3,21 @@ body {
   color: #333333;
   margin-top: 6rem;
 }
-
+main {
+  min-height: 75vh;
+}
+header{
+font-family: Unica One;
+font-size: 20px;
+}
 h1, h2, h3, h4, h5, h6 {
   color: #444444;
+}
+.header-bg{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    top: 0;
 }
 
 .bg-steel {
@@ -76,16 +88,18 @@ transform: translateX(0px);
 }
 
 .bgimage {
-  width:100%;
-  height:100vh;
-  background: url('https://www.blissofpain.co.uk/gallery/sun22052017/_DSC0869.jpg');
+  width:99.1vw;
+  min-height:100vh;
+  background: url('https://raw.githubusercontent.com/frankc95/set09103/master/bop/static/img/bg1.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size:cover;
   background-attachment: fixed;
   margin-top: -25px;
-  margin-bottom: 20px;
   display: flex;
+}
+.2{
+  background: url('https://raw.githubusercontent.com/frankc95/set09103/master/bop/static/img/_DSC0918.jpg');
 }
 img.bgimage-image {
     height: 300px;
@@ -111,12 +125,18 @@ hr.featurette-divider {
 img.rounded-circle {
     height: 140px;
     width: 140px;
+    object-fit: contain;
+    object-position: center;
+    margin: 10px;
+    padding: 3px;
+    background-color: black;
 }
 .col-lg-4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 60px;
 }
 .container-fluid{
   display: flex;
@@ -150,8 +170,22 @@ img.rounded-circle {
 .col-md-12 h1{
    align-self: flex-start;
 }
-
-
+input.form-control:focus {
+    border-color: red;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(240, 49, 40, 0.6);
+}
+textarea.form-control:focus {
+    border-color: red;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(240, 49, 40, 0.6);
+}
+.btn-outline-info {
+    color: red;
+    border-color: red;
+}
+.btn-outline-info:hover {
+    background-color: red;
+    border-color: red;
+}
 a.nav-item.nav-link {
    align-self: flex-start;
 }
@@ -201,6 +235,79 @@ a.article-title:hover {
 
 .account-heading {
   font-size: 2.5rem;
+}
+.insta-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.title-home h1{
+  color: white;
+  font-family: Unica One;
+}
+.instaimg img{
+  height: 400px;
+  width: 100%;
+  object-fit: cover; 
+}
+#crs-wrapper{
+  max-width: 1024px;
+  width: 80vw;
+}
+.slick-dots{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.slick-dots button{
+  border-radius: 50%;
+  border: none;
+  font-size: 0;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  display: block;
+  padding: 0;
+  margin: 0 10px;
+}
+.slick-active button{
+  background-color:red;
+}
+
+.slick-arrow {
+  font-size: 0;
+  background: none;
+  border: none;
+}
+button.slick-prev.slick-arrow {
+    position: absolute;
+    left: -40px;
+    top: 170px;
+}
+button:hover.slick-prev.slick-arrow {
+    color:red;
+}
+button.slick-next.slick-arrow {
+    position: absolute;
+    right: -40px;
+    top: 170px;
+}
+.slick-prev::after {
+  content: '\f060';
+  font-family: 'Font Awesome 5 Free';
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+}
+.slick-next::after {
+  content: '\f061';
+  font-family: 'Font Awesome 5 Free';
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
 }
 @media screen and (min-width: 995px){
     .navbar-expand-md .navbar-toggler {
